@@ -195,3 +195,55 @@ footer .social-media a {
 footer p {
     margin: 5px 0;
 }
+/* Estilo para el contenedor del gráfico */
+#caloriesChartContainer {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Specific Styles */
+.carousel-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Only target the buttons within the carousel to avoid conflicts */
+.carousel-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.carousel-container button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
